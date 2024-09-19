@@ -67,7 +67,7 @@ public class Lobster extends Actor
             Greenfoot.playSound("game-over-160612.wav");
         }
         if (worm != null) {
-            getWorld().addObject( new  Lobster(), getX(), getY());
+            getWorld().addObject( new Lobster(), getX(), getY());
             getWorld().removeObject(worm);
         }
     }
@@ -91,7 +91,7 @@ public class Lobster extends Actor
      */
     public void transitionToGameOverWorld()
     {
-        World gameOverWorld =  new  GameOverWorld();
+        World gameOverWorld =  new GameOverWorld();
         Greenfoot.setWorld(gameOverWorld);
     }
 }
